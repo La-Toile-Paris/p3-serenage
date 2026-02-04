@@ -1,28 +1,193 @@
+/* ========================================
+   STYLE.CSS - Styles globaux partagés
+   ======================================== */
+
+/* ========== Variables ========== */
+:root {
+  /* Couleurs principales */
+  --color-orange: #D85B16;
+  --color-orange-dark: #9E2332;
+  --color-cream: #FFFAED;
+  --color-dark: #171717;
+  --color-white: #fff;
+
+  /* Texte */
+  --color-text: #262626;
+  --color-text-muted: #525252;
+  --color-text-dark: #4a191f;
+
+  /* Ombres */
+  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 16px 48px rgba(0, 0, 0, 0.12);
+
+  /* Typographie */
+  --font-display: "Croissant One", cursive;
+  --font-body: "Libre Caslon Text", serif;
+
+  /* Espacements */
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+
+  /* Border radius */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 20px;
+  --radius-full: 999px;
+}
+
+/* ========== Reset ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
   width: 100%;
 }
 
-:root {
-  --color-text: #262626;
-  --color-text-muted: #525252;
-  --color-orange: #D85B16;
-  --color-orange-dark: #9E2332;
-  --color-cream: #FFFAED;
-  --color-dark: #171717;
-  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 16px 48px rgba(0, 0, 0, 0.12);
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  line-height: 1.6;
+  background: var(--color-cream);
 }
 
-/* Footer */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ========== Container ========== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem var(--spacing-md);
+  height: 10vh;
+}
+
+.navbar__brand {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.navbar__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* ========== Buttons ========== */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-family: var(--font-body);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--ghost {
+  background: var(--color-cream);
+  color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+.button--ghost:hover {
+  background: var(--color-orange);
+  color: var(--color-cream);
+}
+
+.button--primary {
+  background: var(--color-orange);
+  color: var(--color-cream);
+}
+
+.button--primary:hover {
+  background: var(--color-orange-dark);
+}
+
+.button--large {
+  padding: 1rem 2rem;
+  font-size: 1.0625rem;
+  background: var(--color-orange);
+  color: var(--color-cream);
+}
+
+.button--large:hover {
+  background: var(--color-orange-dark);
+}
+
+.button--white {
+  background: #fff;
+  color: var(--color-orange-dark);
+  padding: 1rem 2.2rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+}
+
+.button--white:hover {
+  background: var(--color-cream);
+}
+
+.button--outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 1rem 2.2rem;
+  font-weight: 700;
+}
+
+.button--outline:hover {
+  background: #fff;
+  color: var(--color-orange-dark);
+}
+
+/* ========== Footer ========== */
 .footer {
   background: var(--color-orange) repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0 14px, transparent 14px 28px);
   color: var(--color-cream);
-  padding: 4rem 0 1.5rem;
+  padding: var(--spacing-lg) 0 1.5rem;
 }
 
 .footer__container {
-  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
 }
 
 .footer__grid {
@@ -33,21 +198,26 @@ html {
 }
 
 .footer__brand h3 {
-  font-family: "Croissant One", cursive;
+  font-family: var(--font-display);
   font-size: 2.5rem;
   color: var(--color-cream);
   margin-bottom: 0.5rem;
 }
 
+.footer__brand p {
+  opacity: 0.9;
+}
+
 .footer__column h4 {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
 }
 
 .footer__column a {
   display: block;
   margin-bottom: 0.5rem;
   opacity: 0.9;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .footer__column a:hover {
@@ -56,8 +226,25 @@ html {
 
 .footer__bottom {
   text-align: center;
-  padding-top: 2rem;
+  padding-top: var(--spacing-md);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   opacity: 0.7;
   font-size: 1rem;
+}
+
+/* ========== Responsive Global ========== */
+@media (max-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .navbar__container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .navbar__brand {
+    font-size: 1.5rem;
+  }
 }

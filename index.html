@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Libre+Caslon+Text:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
@@ -36,7 +37,12 @@
         <h1>Prendre soin<br>de l'esprit,<br>en prenant soin<br>des liens</h1>
         <p>Rejoignez la communauté qui reconnecte les générations.</p>
         <div class="hero__actions">
-          <a href="#" class="button button--large">Découvrir Seren'Age</a>
+          <a href="https://www.apple.com/fr/app-store/" target="_blank" rel="noopener noreferrer">
+            <img src="images/image 17.png" alt="App store" />
+          </a>
+          <a href="https://play.google.com/store/games?gl=FR" target="_blank" rel="noopener noreferrer">
+            <img src="images/image 19.png" alt="Google store" />
+          </a>
         </div>
       </div>
     </div>
@@ -46,7 +52,7 @@
   <section class="why-section">
     <h2>Pourquoi Seren'Age ?</h2>
     <p class="why-section__subtitle">Une solution simple pour rompre l'isolement</p>
-    <img src="images/papi.svg" alt="Illustration" class="why-section__illustration">
+    <img src="images/papi.svg" alt="Illustration" class="why-section__illustration" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
     <div class="why-section__cards">
       <div class="benefit-card">
         <img src="images/share.svg" alt="entraide">
@@ -77,28 +83,28 @@
     <div class="services-section__container">
       <h2>Ce que vous pouvez faire</h2>
       <div class="services-grid">
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="600">
           <div class="service-card__image">
             <img src="images/compfinal.jpg" alt="Compagnie">
           </div>
           <h3>Compagnie</h3>
           <p>Discuter, sortir, partager un moment</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
           <div class="service-card__image">
             <img src="images/prendrecafé.jpg" alt="Prendre un café">
           </div>
           <h3>Prendre un café</h3>
           <p>Un café, une balade, une conversation</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
           <div class="service-card__image">
             <img src="images/loisirsfinal.jpg" alt="Loisirs">
           </div>
           <h3>Loisirs</h3>
           <p>Activités simples près de chez vous</p>
         </div>
-        <div class="service-card">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
           <div class="service-card__image">
             <img src="images/adminaide.jpg" alt="Aide administrative">
           </div>
@@ -114,7 +120,7 @@
     <div class="audience-section__content">
       <div class="audience-section__text">
         <h2>Pour qui est Seren'Age ?</h2>
-        <p>Pour les seniors qui souhaitent créer du lien, et pour les familles qui veulent les savoir entourés</p>
+        <p>Pour les seniors qui souhaitent créer du lien,<br>et pour les familles qui veulent les savoir entourés</p>
         <span class="audience-section__tags">Seniors • Familles • Proches • Aidants</span>
       </div>
       <div class="audience-section__image">
@@ -132,56 +138,53 @@
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
-              <div class="carousel__text">
-                <h3>Accueil</h3>
-                <p>Accédez à l'application et parlez de vos besoins.</p>
-              </div>
               <img src="images/MICRO.svg" alt="Accueil" class="carousel__slide-img">
+              <div class="carousel__text">
+                <h3>Serge IA</h3>
+                <p>Assitant IA intégré parlez-lui<br>de vos besoins.</p>
+              </div>
             </div>
-            
+
             <!-- Slide 2 -->
             <div class="swiper-slide">
+              <img src="images/Profile.svg" alt="Inscription" class="carousel__slide-img">
               <div class="carousel__text">
                 <h3>Inscription facile</h3>
                 <p>Création de profil simple avec assistance vocale.</p>
               </div>
-              <img src="images/Profile.svg" alt="Inscription" class="carousel__slide-img">
             </div>
-            
+
             <!-- Slide 3 -->
             <div class="swiper-slide">
+              <img src="images/MAPfigma.svg" alt="Carte" class="carousel__slide-img">
               <div class="carousel__text">
                 <h3>Explorer la carte</h3>
                 <p>Découvrir activités et aides à proximité.</p>
               </div>
-              <img src="images/MAPfigma.svg" alt="Carte" class="carousel__slide-img">
             </div>
-            
+
             <!-- Slide 4 -->
             <div class="swiper-slide">
+              <img src="images/dominque.png" alt="Participer" class="carousel__slide-img">
               <div class="carousel__text">
                 <h3>Participer & aider</h3>
                 <p>Rejoindre des événements en un clic.</p>
               </div>
-              <img src="images/dominque.png" alt="Participer" class="carousel__slide-img">
             </div>
-            
+
             <!-- Slide 5 -->
             <div class="swiper-slide">
+              <img src="images/calendrier.svg" alt="Calendrier" class="carousel__slide-img">
               <div class="carousel__text">
                 <h3>Calendrier</h3>
                 <p>Planifier et organiser vos activités.</p>
               </div>
-              <img src="images/calendrier.svg" alt="Calendrier" class="carousel__slide-img">
             </div>
           </div>
           
           <!-- Navigation -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-          
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -258,34 +261,45 @@
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <script>
 
     const swiper = new Swiper('.swiper', {
-      // Configuration de base
       loop: true,
-      speed: 500,
+      speed: 600,
+      slidesPerView: 1,
+      centeredSlides: true,
+
+      // Fade effect
       effect: 'fade',
       fadeEffect: {
         crossFade: true
       },
-      
+
+      // Autoplay
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+
       // Navigation
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      
-      // Pagination
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      
+
       // Défilement au clavier
       keyboard: {
         enabled: true,
       }
+    });
+
+    // Initialisation AOS
+    AOS.init({
+      once: true,
+      easing: 'ease-out-cubic'
     });
   </script>
 
