@@ -12,22 +12,24 @@
   --dark: #171717;
   --gray: #f4f4f4;
   --text: #404040;
-
-  --txt: #262626;
+ --txt: #262626;
   --muted: #525252;
   --muted2: #737373;
   --orange: #D85B16;
-  --orange2: #A84410;
-  --peach: #FFEAD9;
+  --orange2: #9E2332;
+  --peach: #FFFAED;
   --green: #2BB673;
   --green2: #1F8B55;
   --mint: #DFF7EC;
   --mint2: #5FD49B;
   --dark: #171717;
-  --cream: #F5F2EA;
-  --line: #e5e5e5;
+  --cream: #FFFAED;
+  --line: #D85B16;
   --shadow: 0 8px 24px rgba(0, 0, 0, .1);
   --shadow2: 0 16px 48px rgba(0, 0, 0, .12);
+
+
+
 }
 
 
@@ -36,6 +38,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   scroll-behavior: smooth;
+  background-color: beige;
 }
 
 .container {
@@ -84,7 +87,7 @@ nav {
   align-items: center;
   height: 75px;
   padding: 20px;
-  background-color: rgb(99 89 43 / 38%);
+  background-color: rgb(149 142 125);
   width: 100%;
 }
 
@@ -181,20 +184,30 @@ nav {
 
 /* SECTIONS & CONTAINERS
    ============================================================ */
-#contexte,
-#problematique,
-#genese,
-#evolution {
+#contexte,#evolution , #tests
+ {
   display: flex;
   flex-direction: column;
+  background-color:#9e233233;  
+gap: 25px
+;
   width: 100%;
   align-items: center;
-  margin: 130px 0;
+  padding: 130px 0;
+}
+
+#problematique,#genese
+{
+  display: flex;
+flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 130px 0;
 }
 
 #problematique p,
 #contexte p,
-#genese p {
+#genese p, #evolution p {
   font-size: 20px;
   font-weight: 900;
   color: #4a191f;
@@ -204,16 +217,26 @@ nav {
 }
 
 #contexte h2, #genese h2,
-#problematique h2,
+#problematique h2, #evolution h2
 #genese span {
   color: var(--secondary);
   margin: 0px;
+}
+#evolution h3 {
+  color: var(--secondary);
+  margin: 0px;
+}
+
+.stats-grid {
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  margin-top: 3rem;
 }
 .stat-item p {
   font-size: 20px;
   font-weight: 500;
   color: 4a191f;
-  width: 100%;
   text-align: center;
 
 }
@@ -223,7 +246,6 @@ nav {
       display: flex;
     /* gap: 25px; */
     width: 100%;
-    height: 100%;
     background: var(--white);
     padding: 12px;
     border-radius: 6px;
@@ -249,21 +271,54 @@ nav {
   width: 100%;
 }
 
+#evolution .container {
+ display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+
+}
+#evolution article {
+    display: flex;
+    background: #fff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#evolution article img {  
+
+ width: 250px;
+  height: 250px;
+  object-fit: cover;
+      padding-top: 35px;
+  
+}
+
+
 #problematique img {
   width: 250px;
   height: 250px;
   object-fit: cover;
+      padding-top: 35px;
 }
 
 #genese img {
   width: 170px;
   height: 170px;
   object-fit: cover;
+      padding-top: 35px;
 }
 #contexte img {
   width: 170px;
   height: 170px;
   object-fit: cover;
+      padding-top: 35px;
 }
 
 
@@ -309,14 +364,7 @@ nav {
   font-size: 3rem;
 }
 
-/* STAT*/
-.stats-grid {
-  display: flex;
-  width: 100%;
-  gap: 25px;
-  height: 150px;
-  margin-top: 3rem;
-}
+
 
 
 
