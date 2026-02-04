@@ -240,19 +240,21 @@ nav {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
+  height: 100vh;
 }
 
 #pourquoi .grid-3 #pourquoi{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2vw;
   align-items: center;
-  flex-wrap: nowrap;
 }
 
 .section.orange .grid-3 #pourquoi .block-pourquoi{
-  width: 250px;
+  width: 25vw;
   padding: 18px 18px;
   border-radius: 18px;
   text-align: left;
@@ -269,14 +271,14 @@ nav {
 
 .section.orange .grid-3 #pourquoi .block-pourquoi h3{
   margin: 0 0 8px;
-  font-size: 1.25rem;
+  font-size: 2rem;
   line-height: 1.1;
   color: #9E2332;
 }
 
 .section.orange .grid-3 #pourquoi .block-pourquoi p{
   margin: 0;
-  font-size: 1.02rem;
+  font-size: 1.5rem;
   line-height: 1.35;
   color: #9E2332;
   opacity: .9;
@@ -284,7 +286,7 @@ nav {
 
 .section.orange .grid-3 #pourquoi .block-pourquoi{ background:  var(--cream);
 border: 3px #E24F10 solid;
-min-height: 10vh;
+height: 20vh;
 height: fit-content;
 }
 
@@ -301,6 +303,12 @@ height: fit-content;
 .section.orange .grid-3{
   margin: 0 !important;
   gap: 1.6rem !important;
+}
+
+.grid-3 img{
+  width: 50vw;
+  position: ;
+  bottom: 0;
 }
 
 /* ================= SERVICES ================= */
@@ -363,7 +371,7 @@ height: fit-content;
   width:100%;
   height:auto;
   max-height:240px;
-  object-fit:contain;
+  object-fit:cover;
   display:block;
   margin:0 auto;
   transition:transform .35s ease;

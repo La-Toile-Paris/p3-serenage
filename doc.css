@@ -184,13 +184,12 @@ nav {
 
 /* SECTIONS & CONTAINERS
    ============================================================ */
-#contexte,#evolution , #tests
+#contexte,#evolution , #tests, #persona
  {
   display: flex;
   flex-direction: column;
   background-color:#9e233233;  
-gap: 25px
-;
+  gap: 25px;
   width: 100%;
   align-items: center;
   padding: 130px 0;
@@ -456,7 +455,7 @@ flex-direction: column;
   border-radius: 8px;
   object-fit: cover;
   display: block;
-  filter: grayscale(100%) contrast(1.2);
+  /*filter: grayscale(100%) contrast(1.2);*/
   mix-blend-mode: multiply;
   opacity: 0.9;
 }
