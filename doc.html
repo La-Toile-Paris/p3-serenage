@@ -1,278 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Documentation - Seren'Age</title>
-  <link href="style.css" rel="stylesheet">
-  <link href="doc.css" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900&family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet">
-
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Libre+Caslon+Text:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="doc.css">
 </head>
 
 <body>
-
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <a href="index.html" class="brand">Seren'Age</a>
-      <div class="nav-actions">
-        <a href="index.html" class="btn ghost">Accueil</a>
-        <a href="#" class="btn cta">Télécharger</a>
+  <!-- Navigation -->
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__brand">Seren'Age</div>
+      <div class="navbar__actions">
+        <a href="index.html" class="button button--ghost">Accueil</a>
+        <a href="https://www.figma.com/proto/ZC8V0UJ3IImxckxFTQvRrM/P3----Groupe-2?page-id=1%3A3&node-id=6844-6664&viewport=3400%2C-391%2C0.25&t=Y1hciF56Hff0l3N8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6844%3A6664&show-proto-sidebar=1" class="button button--primary">Télécharger</a>
       </div>
-    </nav>
-  </header>
-
-  <!-- MAIN -->
-
-  <main>
-    <!-- HERO SECTION - ARTICLE PRINCIPAL -->
-
-    <section class="doc-hero">
-      <div class="container">
-        <span class="doc-tag">Le carnet de bord d'une aventure humaine</span>
-        <h1>Parce que personne ne devrait vieillir en silence</h1>
-        <p>Seren'Age est né d'une conviction simple : un sourire ou un service partagé peut changer une vie. Découvrez
-          comment nous recréons du lien, un voisin à la fois.</p>
-        <a href="#contexte" class="btn cta-large">Explorer</a>
-      </div>
-    </section>
-
-    <!-- SECTION 1- problematique -->
-    <section id="problematique">
-      <h2>Problématique</h2>
-      <img src="confused.svg" alt="Solitude">
-
-      <p>Aujourd'hui, des milliers de nos aînés passent des journées entières sans entendre une voix familière. Ce n'est
-        pas seulement de la solitude, c'est une partie de notre société qui s'efface. Nous croyons que la solution n'est
-        pas technologique, mais humaine.</p>
-    </section>
-
-    <!-- SECTION 2 - contexte -->
-    <section id="contexte">
-      <div class="container">
-        <h2>Quelques chiffres</h2>
-        <img src="analys.svg" alt="Statistique">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-number">22%</span>
-            <p>de la population française a plus de 65 ans.</p>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">2M</span>
-            <p>de seniors souffrent d'isolement social au quotidien.</p>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">25%</span>
-            <p> des français déclarent avoir aidé régulièrement une personne âgée</p>
-          </div>
-        </div>
-    </section>
-
-
-
-    <!-- SECTION 3- genese -->
-    <section id="genese">
-      <h2>Notre cheminement</h2>
-      <img src="happy2.svg" alt="Happy">
-
-      <!--<span>Le virage vers l'entraide</span>-->
-      <p>Au début, nous cherchions une idée. Puis, nous avons écouté. Nous avons compris que l'argent n'était pas le
-        moteur, mais l'envie d'être utile. En fusionnant le plaisir et l'entraide, Seren'Age est devenu une évidence: un
-        pont entre ceux qui ont besoin d'un coup de main et ceux qui ont du temps à offrir.</p>
-    </section>
-
-
-<!-- SECTION 4 - persona -->
-    <section class="doc-section alt" id="persona">
-      <div class="container">
-        <h2>NOTRE PERSONA</h2>
-        <section class="doc-section alt">
-          <div class="persona-container">
-            <img src="images/Guillaume.jpg" alt="Guillaume" class="profile-pic">
-
-            <div class="persona-main">
-              <div class="persona-identity">
-                  <h3 class="name">Guillaume</h3>
-                  <p class="role">Guillaume a servi son pays, il a réparé des moteurs toute sa vie, mais aujourd'hui, sa
-                    plus grande panne, c'est l'ennui. À 75 ans, il a encore tant à donner, mais il a peur de déranger
-                  </p>
-                </div>
-              <div class="persona-sidebar">
-
-                
-              </div>
-              <div class="info-grid">
-                <div class="info-col">
-                  <div class="data-block">
-                    <h4>MOI</h4>
-                    <p>🎂 75 ans</p>
-                    <p>📍 Paris</p>
-                    <p>🔧 Expertise : Mécanique</p>
-                  </div>
-
-                  <div class="data-block">
-                    <h4>MES PREFERENCES</h4>
-                    <p> Je préfère les activités locales. Adepte de la régularité et des rendez-vous fixes. Très
-                      ponctuel.
-                    </p>
-                  </div>
-
-                  <div class="data-block">
-                    <h4>MES CENTRES D'INTERETS</h4>
-                    <p>Famille • Anciens collègues • Proximité géographique</p>
-                  </div>
-                </div>
-
-                <div class="info-col">
-                  <div class="data-block">
-                    <h4>MOTIVATIONS</h4>
-                    <p>Je souhaite maintenir un lien social, rester actif physiquement et se sentir utile à la
-                      communauté.
-                    </p>
-                  </div>
-
-                  <div class="data-block">
-                    <h4>MES BESOINS</h4>
-                    <p>J'ai besoin de contacts humains directs et d'interfaces numériques ultra-simplifiées.</p>
-                  </div>
-
-                  <div class="data-block">
-                    <h4>MES LACUNES</h4>
-                    <p>J'ai des difficulté avec la technologie complexe et j'ai peur de ne pas être au niveau
-                      physiquement.</p>
-                  </div>
-                </div>
-              </div>
-
-              <blockquote class="persona-quote">
-                "Je ne cherche pas la lune, juste quelqu'un avec qui partager un café en rentrant du marché."
-              </blockquote>
-            </div>
-          </div>
-        </section>
-    </section>
-
-
-    <!-- SECTION 5- evolution -->
-    <section id="evolution" class="doc-section alt2">
-      <h2>Notre Évolution Design</h2>
-      <div class="container">
-        <article class="step-card">
-          <img src="old fun 1.svg" alt="Sketches">
-          <h3>Sketches</h3>
-          <p>Dessins des premières fonctionnalités : personnalisation et planification de l'entraide.</p>
-        </article>
-        <article class="step-card">
-          <img src="Free iPhone Air.svg" alt="Wireframes">
-          <h3>Wireframes</h3>
-          <p>Mise à plat de l'ergonomie en noir et blanc pour valider le parcours utilisateur.</p>
-        </article>
-        <article class="step-card">
-          <img src="iphon16pro.svg" alt="Version testée">
-          <h3>Version testée</h3>
-          <p>Interface finale après retours utilisateurs : plus de contrastes et boutons agrandis.</p>
-        </article>
-      </div>
-    </section>
-
-    
-
-
-
-    <!-- SECTION 5 - test -->
-    <section class="doc-section" id="tests">
-      <div class="container">
-        <h2>Tests Utilisateurs</h2>
-        <div class="metrics">
-          <div><strong>4</strong><span>Testeurs</span></div>
-          <div><strong>2</strong><span>Sessions</span></div>
-          <div><strong>15+</strong><span>Améliorations</span></div>
-        </div>
-        <div class="insights">
-          <div class="positive">
-            <h4>Positifs</h4>
-            <p>Concept pertinent, dimension solidaire, ton chaleureux</p>
-          </div>
-          <div class="negative">
-            <h4> Améliorations</h4>
-            <p>Textes plus grands, filtres clairs, alternatives au vocal</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- SECTION - ambition -->
-    <section id="ambition" class="doc-section dark">
-      <div class="container">
-        <h2>Notre rêve pour demain</h2>
-        <p class="lead">Nous ne voulons pas seulement créer une application. Nous voulons que chaque quartier devienne
-          une
-          famille. Un monde où l'âge n'est plus une barrière, mais une richesse partagée.</p>
-        <div class="goals">
-          <div><strong>01</strong>
-            <h4>Déploiement National</h4>
-          </div>
-          <div><strong>02</strong>
-            <h4>Partenariats Locaux</h4>
-          </div>
-          <div><strong>03</strong>
-            <h4>Intergénérationnel</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <section class="doc-footer-cta">
-
-      <div class="container">
-        <h2>Prêt à en savoir plus ?</h2>
-        <a href="index.html" class="btn cta-large">Retour accueil</a><a href="#" class="btn ghost-large">Télécharger</a>
-      </div>
-    </section>
-    <div class="container footer-simple">
-      <h3>Seren'Age</h3>
-      <p>© 2026 - Projet La Toile × emlyon</p>
     </div>
-  </footer>
+  </nav>
 
-</body>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__content">
+      <span class="hero__tag">Le carnet de bord d'une aventure humaine</span>
+      <h1>Parce que personne ne devrait vieillir en silence</h1>
+      <p>Seren'Age est né d'une conviction simple : un sourire ou un service partagé peut changer une vie.</p>
+      <a href="#problematique" class="button--white">Explorer</a>
+    </div>
+  </section>
 
-</html>
-
-
-
-
-
-
-<!--
-  <section id="equipe" class="doc-section alt2">
+  <!-- Problématique -->
+  <section class="section" id="problematique">
     <div class="container">
-      <h2>La dream team</h2>
-      <p class="center-text">Chacun de nous a touché à toutes les étapes du projet.</p>
-      <div class="team-grid">
-        <div class="member">Amdjad</div>
-        <div class="member">Mame Fatou</div>
-        <div class="member">Ilyas</div>
-        <div class="member">Dylan</div>
-        <div class="member">Ilham</div>
-        <div class="member">Yadali</div>
+      <div class="section__header">
+        <h2 class="section__title">Problématique</h2>
+        <img src="confused.svg" alt="Solitude" class="section__icon">
+      </div>
+      <p class="section__text">
+        Aujourd'hui, des milliers de nos aînés passent des journées entières sans entendre une voix familière. 
+        Ce n'est pas seulement de la solitude, c'est une partie de notre société qui s'efface. 
+        Nous croyons que la solution n'est pas technologique, mais humaine.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contexte -->
+  <section class="section section--alt" id="contexte">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Quelques chiffres</h2>
+        <img src="analys.svg" alt="Statistique" class="section__icon">
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-card__number">22%</span>
+          <p class="stat-card__text">de la population française a plus de 65 ans.</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">2M</span>
+          <p class="stat-card__text">de seniors souffrent d'isolement social au quotidien.</p>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">25%</span>
+          <p class="stat-card__text">des français déclarent avoir aidé régulièrement une personne âgée</p>
+        </div>
       </div>
     </div>
   </section>
 
-  -->
+  <!-- Genèse -->
+  <section class="section" id="genese">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Notre cheminement</h2>
+        <img src="happy2.svg" alt="Happy" class="section__icon">
+      </div>
+      <p class="section__text">
+        Au début, nous cherchions une idée. Puis, nous avons écouté. Nous avons compris que l'argent n'était pas le moteur, 
+        mais l'envie d'être utile. En fusionnant le plaisir et l'entraide, Seren'Age est devenu une évidence: 
+        un pont entre ceux qui ont besoin d'un coup de main et ceux qui ont du temps à offrir.
+      </p>
+    </div>
+  </section>
+
+  <!-- Persona -->
+  <section class="section section--alt" id="persona">
+    <div class="container">
+      <h2 class="section__title">Notre Persona</h2>
+      <div class="persona">
+        <div>
+          <img src="images/Guillaume.jpg" alt="Guillaume" class="persona__image">
+          <h3 class="persona__name">Guillaume</h3>
+          <p class="persona__intro">
+            Guillaume a servi son pays, il a réparé des moteurs toute sa vie, mais aujourd'hui, 
+            sa plus grande panne, c'est l'ennui. À 75 ans, il a encore tant à donner, mais il a peur de déranger.
+          </p>
+        </div>
+        <div>
+          <div class="persona__grid">
+            <div class="persona__block">
+              <h4>Moi</h4>
+              <p>🎂 75 ans<br>📍 Paris<br>🔧 Expertise : Mécanique</p>
+            </div>
+            <div class="persona__block">
+              <h4>Motivations</h4>
+              <p>Maintenir un lien social, rester actif physiquement et se sentir utile à la communauté.</p>
+            </div>
+            <div class="persona__block">
+              <h4>Préférences</h4>
+              <p>Je préfère les activités locales. Adepte de la régularité et des rendez-vous fixes. Très ponctuel.</p>
+            </div>
+            <div class="persona__block">
+              <h4>Besoins</h4>
+              <p>J'ai besoin de contacts humains directs et d'interfaces numériques ultra-simplifiées.</p>
+            </div>
+            <blockquote class="persona__quote">
+              "Je ne cherche pas la lune, juste quelqu'un avec qui partager un café en rentrant du marché."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evolution -->
+  <section class="section" id="evolution">
+    <div class="container">
+      <h2 class="section__title">Notre Évolution Design</h2>
+      <div class="evolution">
+        <div class="evolution-card">
+          <img src="old fun 1.svg" alt="Sketches" class="evolution-card__image">
+          <h3>Sketches</h3>
+          <p>Dessins des premières fonctionnalités : personnalisation et planification de l'entraide.</p>
+        </div>
+        <div class="evolution-card">
+          <img src="Free iPhone Air.svg" alt="Wireframes" class="evolution-card__image">
+          <h3>Wireframes</h3>
+          <p>Mise à plat de l'ergonomie en noir et blanc pour valider le parcours utilisateur.</p>
+        </div>
+        <div class="evolution-card">
+          <img src="iphon16pro.svg" alt="Version testée" class="evolution-card__image">
+          <h3>Version testée</h3>
+          <p>Interface finale après retours utilisateurs : plus de contrastes et boutons agrandis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tests -->
+  <section class="section" id="tests">
+    <div class="container">
+      <h2 class="section__title">Tests Utilisateurs</h2>
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric__number">4</span>
+          <span class="metric__label">Testeurs</span>
+        </div>
+        <div class="metric">
+          <span class="metric__number">2</span>
+          <span class="metric__label">Sessions</span>
+        </div>
+        <div class="metric">
+          <span class="metric__number">15+</span>
+          <span class="metric__label">Améliorations</span>
+        </div>
+      </div>
+      <div class="insights">
+        <div class="insight insight--positive">
+          <h4>Positifs</h4>
+          <p>Concept pertinent, dimension solidaire, ton chaleureux</p>
+        </div>
+        <div class="insight insight--negative">
+          <h4>Améliorations</h4>
+          <p>Textes plus grands, filtres clairs, alternatives au vocal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambition -->
+  <section class="section section--dark" id="ambition">
+    <div class="container">
+      <h2 class="section__title">Notre rêve pour demain</h2>
+      <p class="section__text">
+        Nous ne voulons pas seulement créer une application. Nous voulons que chaque quartier devienne une famille. 
+        Un monde où l'âge n'est plus une barrière, mais une richesse partagée.
+      </p>
+      <div class="goals">
+        <div class="goal">
+          <strong>01</strong>
+          <h4>Déploiement National</h4>
+        </div>
+        <div class="goal">
+          <strong>02</strong>
+          <h4>Partenariats Locaux</h4>
+        </div>
+        <div class="goal">
+          <strong>03</strong>
+          <h4>Intergénérationnel</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>Seren'Age</h3>
+          <p>Créer du lien à tout âge</p>
+        </div>
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <a href="#problematique">Pourquoi</a>
+          <a href="#evolution">Design</a>
+        </div>
+        <div class="footer__column">
+          <h4>Ressources</h4>
+          <a href="index.html">Accueil</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="footer__column">
+          <h4>Légal</h4>
+          <a href="#">Mentions légales</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Seren'Age - Projet La Toile × emlyon</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
