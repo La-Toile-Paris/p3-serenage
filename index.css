@@ -73,7 +73,7 @@ a {
 
 /* Topbar / Nav */
 .topbar {
-  position: fixed;
+  
   inset: 0 0 auto 0;
   z-index: 100;
   background: rgba(255, 255, 255, .95);
@@ -860,6 +860,418 @@ footer {
   opacity: 0.7;
   font-size: 1rem;
 }
+/* ================= HERO ================= */
 
+.hero{
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
 
+/* background image + overlay */
+.hero-img,
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
 
+.hero-img{
+  object-fit: cover;
+}
+
+.hero-overlay{
+  background: linear-gradient(
+    135deg,
+    rgba(216, 91, 22, 0.75),
+    rgba(43, 182, 115, 0.34)
+  );
+}
+
+/* container texte */
+.hero-inner{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* texte à gauche mais aéré */
+.hero-content{
+  max-width: 680px;
+  margin-left: 2rem;          /* 🔑 proche du bord, pas collé */
+  color: #fff;
+}
+
+/* titre */
+.hero h1{
+  font-family: "Fraunces", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero em{
+  color: var(--peach);
+  font-style: italic;
+}
+
+/* paragraphe */
+.hero p{
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  margin-bottom: 2rem;
+  max-width: 40ch;
+}
+
+/* CTA */
+.hero-cta{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ================= MOCKUP ================= */
+
+/* ancré au coin bas-droit */
+.hero-mockup{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: min(440px, 46vw);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* image naturelle */
+.hero-mockup img{
+  width: 100%;
+  height: auto;
+  display: block;
+
+  /* 🔑 main collée au coin + téléphone vers la gauche */
+  transform: translate(14%, 10%) rotate(-7deg);
+  transform-origin: bottom right;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px){
+  .hero{
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .hero-content{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta{
+    justify-content: center;
+  }
+
+  .hero-mockup{
+    position: static;
+    width: min(320px, 85vw);
+    margin: 2.5rem auto 0;
+  }
+
+  .hero-mockup img{
+    transform: none;
+  }
+}
+
+/* ============ POURQUOI (pills fines, texte dedans, image gardée) ============ */
+
+/* On cible uniquement le #pourquoi à l'intérieur de la grille */
+.section.orange .grid-3 #pourquoi{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 14px;
+  align-self: center;
+}
+
+/* Image à gauche : taille propre */
+.section.orange .grid-3 > img{
+  width: min(420px, 40vw);
+  height: auto;
+  align-self: center;
+}
+
+/* Pills : plus fines + inclinées même sens */
+.section.orange .grid-3 #pourquoi .block-pourquoi{
+  width: 100%;                 /* ✅ plus de 35vw */
+  max-width: 520px;
+  padding: 14px 20px;          /* ✅ plus fin */
+  
+  text-align: left;            /* ✅ texte bien dedans */
+  display: flex;               /* ✅ garde le contenu centré verticalement */
+  align-items: center;
+  box-shadow: 0 14px 30px rgba(0,0,0,.12);
+  transform: rotate(-4deg);
+  margin: 0;                   /* ✅ évite les décalages bizarres */
+}
+
+/* Le div interne doit prendre la largeur */
+.section.orange .grid-3 #pourquoi .block-pourquoi > div{
+  width: 100%;
+}
+
+/* Typo plus compacte (pills fines) */
+.section.orange .grid-3 #pourquoi .block-pourquoi h3{
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+
+.section.orange .grid-3 #pourquoi .block-pourquoi p{
+  margin: 0;
+  font-size: .98rem;
+  line-height: 1.35;
+  color: #2f2f2f;
+  opacity: .9;
+}
+
+/* Couleurs différentes */
+.section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(1){
+  background: #FFE9DD; /* pêche */
+}
+.section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(2){
+  background: #DFF7EC; /* mint */
+}
+.section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(3){
+  background: #FFF2C6; /* jaune doux */
+}
+
+/* Petit effet pile (même direction) */
+.section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(2){ margin-left: 14px; }
+.section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(3){ margin-left: 28px; }
+
+/* Hover léger */
+.section.orange .grid-3 #pourquoi .block-pourquoi:hover{
+  transform: rotate(-4deg) translateY(-6px);
+}
+
+/* Mobile : pas de rotation, pills normales */
+@media (max-width: 768px){
+  .section.orange .grid-3{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .section.orange .grid-3 > img{
+    width: min(320px, 85vw);
+  }
+
+  .section.orange .grid-3 #pourquoi .block-pourquoi{
+    border-radius: 22px;
+    transform: none;
+    max-width: 100%;
+  }
+
+  .section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(2),
+  .section.orange .grid-3 #pourquoi .block-pourquoi:nth-child(3){
+    margin-left: 0;
+  }
+
+  .section.orange .grid-3 #pourquoi .block-pourquoi:hover{
+    transform: translateY(-6px);
+  }
+}
+/* ================= COMMENT ÇA MARCHE - CAROUSEL ================= */
+
+.marche{
+  background: #ff5b01;
+  padding: 6rem 0;
+  color: #fff;
+}
+
+.marche h2{
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #000;
+}
+
+/* wrapper carousel */
+.carousel{
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* zone slides */
+.slides{
+  overflow: hidden;
+}
+
+/* slide */
+.slide{
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  opacity: 0;
+}
+
+.slide.active{
+  display: grid;
+  opacity: 1;
+  animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+  from{ opacity:0; transform: translateX(20px); }
+  to{ opacity:1; transform: translateX(0); }
+}
+
+/* texte */
+.slide .txt{
+  padding-right: 2rem;
+}
+
+.slide .txt h3{
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #FFFAED;
+  line-height: 1.2;
+}
+
+.slide .txt p{
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* image */
+.slide img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 40px;
+  transition: transform .3s ease;
+}
+
+.slide img:hover{
+  transform: scale(1.05);
+}
+
+/* flèches */
+.nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--orange);
+  border: none;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  z-index: 10;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(216, 91, 22, .3);
+}
+
+.nav:hover{
+  background: var(--orange2);
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 12px 32px rgba(216, 91, 22, .4);
+}
+
+.nav svg{
+  width: 32px;
+  height: 32px;
+}
+
+.nav.prev{ left: -35px; }
+.nav.next{ right: -35px; }
+
+/* indicateurs */
+.dots{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 3rem;
+}
+
+.dots button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(216, 91, 22, .2);
+  border: 2px solid rgba(216, 91, 22, .4);
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 0;
+}
+
+.dots button:hover{
+  background: rgba(216, 91, 22, .5);
+  transform: scale(1.2);
+}
+
+.dots button.active{
+  background: var(--orange);
+  width: 40px;
+  border-radius: 6px;
+  border-color: var(--orange);
+}
+
+/* responsive */
+@media (max-width: 900px){
+  .carousel{
+    padding: 0 60px;
+  }
+
+  .slide.active{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .slide .txt{
+    padding-right: 0;
+  }
+
+  .nav{
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav svg{
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav.prev{ left: 0; }
+  .nav.next{ right: 0; }
+
+  .slide img{
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px){
+  .slide img{
+    max-width: 300px;
+  }
+}

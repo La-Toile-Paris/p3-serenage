@@ -24,44 +24,52 @@
       </div>
     </div>
   </nav>
+<header class="hero">
+  <img class="hero-img" src="images/background.jpg" alt="Seniors">
+  <div class="hero-overlay"></div>
 
-  <header class="hero">
-    <img class="hero-img" src="images/background.jpg" alt="Seniors">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
+  <div class="container hero-inner">
+    <div class="hero-content">
       <h1>Prendre soin de l'esprit,<em><br>en prenant soin des liens</em></h1>
-      <p>Rejoignez la communauté qui reconnecte les générations.
-      </p>
+      <p>Rejoignez la communauté qui reconnecte les générations.</p>
+
       <div class="hero-cta">
         <a href="#" class="btn cta-large">Découvrir Seren'Age</a>
         <a href="#pourquoi" class="btn ghost-large">En savoir plus</a>
       </div>
     </div>
-  </header>
+
+    <div class="hero-mockup">
+      <img src="images\mocklanding.svg" alt="Application Seren Age">
+    </div>
+  </div>
+</header>
+
+  <!-- Pourquoi Section  ne pas modifier -->
   <section class="section orange" id="pourquoi">
     <div class="container">
       <h2>Pourquoi Seren'Age ?</h2>
-      <p class="intro">Face à l'isolement croissant des seniors, nous avons créé une solution simple, humaine et
-        accessible.</p>
+      <p class="intro">Une solution simple pour rompre l’isolement</p>
+
       <div class="grid-3">
         <img src="images/PAPIillustrator.svg" alt="Illustration">
         <div id="pourquoi">
           <div class="block-pourquoi">
             <div>
               <h3>Créer du Lien</h3>
-              <p>Partager des moments, rencontrer des personnes bienveillantes.</p>
+              <p>Partager, rencontrer des personnes bienveillantes.</p>
             </div>
           </div>
           <div class="block-pourquoi">
             <div>
               <h3>Bien-être Mental</h3>
-              <p>Lutter contre la solitude en maintenant une vie sociale active.</p>
+              <p>Maintenir une vie sociale active.</p>
             </div>
           </div>
           <div class="block-pourquoi">
             <div>
               <h3>S'entraider</h3>
-              <p>Donner et recevoir de l'aide, se sentir utile et soutenu.</p>
+              <p>Se sentir utile et soutenu.</p>
             </div>
           </div>
           </div>
@@ -160,46 +168,76 @@
   </section>
 
 
-  <!-- Comment ça marche  pas fini ajout mockup après-->
-  <section class="marche">
-    <div class="container">
-      <h2>Comment ça marche ?</h2>
-      
-      <div class="marche-grid">
-        <div class="marche-step">
-          <img src="images\MICRO.svg" alt="Accueil">
-          <h3>1. Accueil</h3>
-          <p>Accédez à l'application et parlez de vos besoins</p>
+  
+<section class="marche">
+  <div class="container">
+    <h2>Comment ça marche ?</h2>
+
+    <div class="carousel">
+      <!-- bouton précédent -->
+      <button class="nav prev" aria-label="Étape précédente">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- slides -->
+      <div class="slides">
+        <div class="slide active">
+          <div class="txt">
+            <h3>Accueil</h3>
+            <p>Accédez à l'application et parlez de vos besoins.</p>
+          </div>
+          <img src="images/MICRO.svg" alt="Accueil">
         </div>
 
-        <div class="marche-step">
-          <img src="images\Profile.svg" alt="Inscription">
-          <h3>2. Inscription Facile</h3>
-          <p>Création de profil simple avec assistance vocale</p>
+        <div class="slide">
+          <div class="txt">
+            <h3>Inscription facile</h3>
+            <p>Création de profil simple avec assistance vocale.</p>
+          </div>
+          <img src="images/Profile.svg" alt="Inscription">
         </div>
 
-        <div class="marche-step">
-          <img src="images\MAPfigma.svg" alt="Carte">
-          <h3>3. Explorer la Carte</h3>
-          <p>Découvrir activités et aides à proximité</p>
+        <div class="slide">
+          <div class="txt">
+            <h3>Explorer la carte</h3>
+            <p>Découvrir activités et aides à proximité.</p>
+          </div>
+          <img src="images/MAPfigma.svg" alt="Carte">
         </div>
 
-        <div class="marche-step">
-          <img src="images\dominque.png" alt="Participer">
-          <h3>4. Participer & Aider</h3>
-          <p>Rejoindre des événements en un clic</p>
+        <div class="slide">
+          <div class="txt">
+            <h3>Participer & aider</h3>
+            <p>Rejoindre des événements en un clic.</p>
+          </div>
+          <img src="images/dominque.png" alt="Participer">
         </div>
 
-        <div class="marche-step">
-          <img src="images\calendrier.svg" alt="Calendrier">
-          <h3>5. Calendrier</h3>
-          <p>Planifier et organiser vos activités</p>
+        <div class="slide">
+          <div class="txt">
+            <h3>Calendrier</h3>
+            <p>Planifier et organiser vos activités.</p>
+          </div>
+          <img src="images/calendrier.svg" alt="Calendrier">
         </div>
       </div>
-    </div>
-  </section>
 
- 
+      <!-- bouton suivant -->
+      <button class="nav next" aria-label="Étape suivante">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- indicateurs -->
+    <div class="dots"></div>
+  </div>
+</section>
+  <!-- Partenaires Section fini ne pas modifier -->
+
   <section class="section cream">
     <div class="container">
       <h2>Nos Partenaires</h2>
@@ -256,6 +294,7 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 
   
 </body>
