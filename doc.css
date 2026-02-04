@@ -184,7 +184,7 @@ nav {
 
 /* SECTIONS & CONTAINERS
    ============================================================ */
-#contexte,#evolution , #tests, #persona
+#contexte , #tests, #persona
  {
   display: flex;
   flex-direction: column;
@@ -195,7 +195,7 @@ nav {
   padding: 130px 0;
 }
 
-#problematique,#genese
+#problematique,#genese,#evolution
 {
   display: flex;
 flex-direction: column;
@@ -221,29 +221,37 @@ flex-direction: column;
   color: var(--secondary);
   margin: 0px;
 }
-#evolution h3 {
-  color: var(--secondary);
-  margin: 0px;
-}
 
-.stats-grid {
+/* 1 PROBLEMATIQUE*/
+#problematique .container {
   display: flex;
   width: 100%;
-  gap: 25px;
-  margin-top: 3rem;
 }
+#problematique img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+      padding-top: 35px;
+}
+
+
+/* 2 CONTEXTE*/
+#contexte .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 .stat-item p {
   font-size: 20px;
   font-weight: 500;
   color: 4a191f;
   text-align: center;
-
 }
 
-
 .stat-item {
-      display: flex;
-    /* gap: 25px; */
+    display: flex;
     width: 100%;
     background: var(--white);
     padding: 12px;
@@ -255,57 +263,25 @@ flex-direction: column;
     flex-direction: column;
     align-items: center;
 }
-
-
-#contexte .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
+.stat-item:hover {
+  transform: translateY(-5px);
 }
-
-
-#problematique .container {
+.stats-grid {
   display: flex;
   width: 100%;
+  gap: 25px;
+  margin-top: 3rem;
+}
+.stat-number {
+  font-family: 'Fraunces', serif;
+  width: max-content;
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--primary);
+  display: block;
 }
 
-#evolution .container {
- display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 25px;
-
-}
-#evolution article {
-    display: flex;
-    background: #fff;
-    width: 40%;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-
-}
-#evolution article img {  
-
- width: 250px;
-  height: 250px;
-  object-fit: cover;
-      padding-top: 35px;
-  
-}
-
-
-#problematique img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-      padding-top: 35px;
-}
+/* 3 GENESE*/
 
 #genese img {
   width: 170px;
@@ -320,103 +296,18 @@ flex-direction: column;
       padding-top: 35px;
 }
 
-
-#statistique .container {
-  display: flex;
-  width: 100%;
-}
-
 #genese span {
   font-size: 25px;
   font-weight: 1000;
 }
 
 
-
-
-
-
-
-
-
-
-.doc-section.dark {
-  background: #dc6b2d;
-  color: #fff;
-}
-
-
-
-.problem-statement {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  background: #9e2332;
-  border-radius: 20px;
-  border: 3px solid #FF8C4B;
-  margin-top: 2rem;
-  align-items: center;
-  color: white;
-}
-
-.statement-icon {
-  font-size: 3rem;
-}
-
-
-
-
-
-.stat-item:hover {
-  transform: translateY(-5px);
-}
-
-.stat-number {
-  font-family: 'Fraunces', serif;
-  width: max-content;
-  font-size: 4rem;
-  font-weight: 900;
-  color: var(--primary);
-  display: block;
-}
-
-
-
-
-
-
-.lead {
-  font-size: 1.3rem;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto 3rem;
-  color: black;
-}
-
-
-
-
-/* PERSONA & SOLUTIONS
-   ============================================================ */
-.persona {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2.5rem;
-  background: #fff;
-  border-radius: 28px;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-  border: 3px solid #2BB677;
-}
-
+/* 4 PERSONA*/
 
 .persona h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
-
 .persona blockquote {
   font-family: 'Fraunces', serif;
   font-style: italic;
@@ -428,8 +319,6 @@ flex-direction: column;
   margin-top: 1.5rem;
   text-align: left;
 }
-
-
 .persona-container {
   display: flex;
   gap: 40px;
@@ -442,13 +331,10 @@ flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-dark);
 }
-
-/* Sidebar Image */
 .persona-sidebar {
   flex: 1;
   max-width: 350px;
 }
-
 .profile-pic {
   width: 45%;
   height: auto;
@@ -459,42 +345,34 @@ flex-direction: column;
   mix-blend-mode: multiply;
   opacity: 0.9;
 }
-
 .persona-identity {
   margin-top: 20px;
 }
-
 .persona-identity .name {
   margin: 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
-
 .persona-identity .role {
   color: var(--text-light);
   font-size: 1.1rem;
   margin: 5px 0;
 }
-
-/* Contenu Principal */
 .persona-main {
   flex: 2;
 }
-
 .info-grid {
   display: flex;
   gap: 30px;
 }
-
 .info-col {
   flex: 1;
 }
-
 .data-block {
   margin-bottom: 25px;
 }
 
-/* Lignes sous les titres */
+
 .data-block h4 {
   border-bottom: 2px solid var(--border-soft);
   padding-bottom: 8px;
@@ -510,26 +388,75 @@ flex-direction: column;
   margin: 5px 0;
 }
 
-/* Stats boxes */
-.stats-container {
-  display: flex;
-  gap: 15px;
-  margin-top: 30px;
+
+/* 5 EVOLUTION*/
+#evolution .container {
+ display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 25px;
+}
+#evolution article {
+    display: flex;
+    background: #fff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+#evolution h3 {
+  color: var(--secondary);
+  margin: 0px;
+}
+#evolution article img {
+    width: 100%;
+    height: 400px;
+    padding-top: 35px;
+    transition: 0.3s; 
+}
+
+#evolution article:hover img {
+    opacity: 0.7; 
+}
+
+.step-card {
+  background: var(--primary);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 
+/* 5 AMBITION*/
 
-.stat-value {
-  display: block;
-  font-size: 1.6rem;
-  font-weight: bold;
+.lead {
+  font-size: 1.3rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  color: black;
 }
 
-.stat-label {
-  font-size: 0.75rem;
-  color: var(--text-light);
-  text-transform: uppercase;
+.doc-section.dark {
+  background: #dc6b2d;
+  color: #fff;
 }
+
+
+/* FOOTER*/
+
+
+
+
+
+
+
+
 
 /* Quote */
 .persona-quote {
@@ -579,14 +506,6 @@ flex-direction: column;
 
 /* Évolution */
 
-
-.step-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  text-align: center;
-}
 
 .img-placeholder {
   height: 220px;
