@@ -1,274 +1,253 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Seren'Age - Créer du lien à tout âge</title>
-  <link href="index.css" rel="stylesheet">
-  <link
-    href=<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap" rel="stylesheet">
-   
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Libre+Caslon+Text:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="topbar">
-    <div class="container nav">
-      <div class="brand">Seren'Age</div>
-      <div class="nav-actions">
-        <a href="doc.html" class="btn ghost">Documentation</a>
-        <a href="https://www.figma.com/proto/ZC8V0UJ3IImxckxFTQvRrM/P3----Groupe-2?page-id=1%3A3&node-id=6844-6664&viewport=3400%2C-391%2C0.25&t=Y1hciF56Hff0l3N8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6844%3A6664&show-proto-sidebar=1"
-          class="btn cta">Télécharger</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__brand">Seren'Age</div>
+      <div class="navbar__actions">
+        <a href="doc.html" class="button button--ghost">Documentation</a>
+        <a href="https://www.figma.com/proto/ZC8V0UJ3IImxckxFTQvRrM/P3----Groupe-2?page-id=1%3A3&node-id=6844-6664&viewport=3400%2C-391%2C0.25&t=Y1hciF56Hff0l3N8-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6844%3A6664&show-proto-sidebar=1" class="button button--primary">Télécharger</a>
       </div>
     </div>
   </nav>
-<header class="hero">
-  <img class="hero-img" src="images/background.jpg" alt="Seniors">
-  <div class="hero-overlay"></div>
 
-  <div class="container hero-inner">
-    <div class="hero-mockup">
-      <img src="images\serenage.png" alt="Application Seren Age">
-    </div>
-    <div class="hero-content">
-      <h1>Prendre soin  <br>  de l'esprit, <br> en prenant soin <br>  des liens</h1>
-      <p>Rejoignez la communauté qui reconnecte les générations.</p>
-
-      <div class="hero-cta">
-        <a href="#" class="btn cta-large">Découvrir Seren'Age</a>
-        <!-- <a href="#pourquoi" class="btn ghost-large">En savoir plus</a> -->
+  <!-- Hero Section -->
+  <header class="hero">
+    <img class="hero__background" src="images/background.jpg" alt="Seniors">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__mockup">
+        <img src="images/serenage.png" alt="Application Seren Age">
+      </div>
+      <div class="hero__text">
+        <h1>Prendre soin<br>de l'esprit,<br>en prenant soin<br>des liens</h1>
+        <p>Rejoignez la communauté qui reconnecte les générations.</p>
+        <div class="hero__actions">
+          <a href="#" class="button button--large">Découvrir Seren'Age</a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- Pourquoi Section  ne pas modifier -->
-  <section class="section orange" id="pourquoi">
-    <div class="container">
-      <h2>Pourquoi Seren'Age ?</h2>
-      <p class="intro">Une solution simple pour rompre l’isolement</p>
-
-      <div class="grid-3">
-        <img src="images/PAPIillustrator.svg" alt="Illustration">
-        <div id="pourquoi">
-          <div class="block-pourquoi">
-            <div>
-              <h3>Créer du lien</h3>
-              <p>Partager, rencontrer des personnes bienveillantes.</p>
-            </div>
-          </div>
-          <div class="block-pourquoi">
-            <div>
-              <h3>Bien-être mental</h3>
-              <p>Maintenir une vie sociale active.</p>
-            </div>
-          </div>
-          <div class="block-pourquoi">
-            <div>
-              <h3>S'entraider</h3>
-              <p>Se sentir utile et soutenu.</p>
-            </div>
-          </div>
-          </div>
-        <!--<img src="images/GraphicRound.svg" alt="Graph">-->
+ <!-- Pourquoi Section -->
+  <section class="why-section">
+    <h2>Pourquoi Seren'Age ?</h2>
+    <p class="why-section__subtitle">Une solution simple pour rompre l'isolement</p>
+    <img src="images/papi.svg" alt="Illustration" class="why-section__illustration">
+    <div class="why-section__cards">
+      <div class="benefit-card">
+        <img src="images/share.svg" alt="entraide">
+        <div>
+        <h3>Créer du lien</h3>
+        <p>Partager, rencontrer des personnes bienveillantes.</p>
+        </div>
+      </div>
+       <div class="benefit-card">
+        <img src="images/mentalhealth.svg" alt="Bien-être mental" class="benefit-card__icon">
+        <div class="benefit-card__content">
+          <h3>Bien-être mental</h3>
+          <p>Maintenir une vie sociale active.</p>
+        </div>
+      </div>
+      <div class="benefit-card">
+        <img src="images/entraide.svg" alt="S'entraider" class="benefit-card__icon">
+        <div class="benefit-card__content">
+          <h3>S'entraider</h3>
+          <p>Se sentir utile et soutenu.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section fini ne pas modifier -->
-  <section class="services" id="services">
-  <div class="container">
-    <h2>Ce que vous pouvez faire</h2>
-
-    <div class="services-grid">
-      <div class="service-item">
-        <div class="service-icon">
-          <img src="images\compfinal.jpg" alt="Compagnie">
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="services-section__container">
+      <h2>Ce que vous pouvez faire</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="images/compfinal.jpg" alt="Compagnie">
+          </div>
+          <h3>Compagnie</h3>
+          <p>Discuter, sortir, partager un moment</p>
         </div>
-        <h3>Compagnie</h3>
-        <p>Discuter, sortir, partager un moment</p>
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="images/prendrecafé.jpg" alt="Prendre un café">
+          </div>
+          <h3>Prendre un café</h3>
+          <p>Un café, une balade, une conversation</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="images/loisirsfinal.jpg" alt="Loisirs">
+          </div>
+          <h3>Loisirs</h3>
+          <p>Activités simples près de chez vous</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__image">
+            <img src="images/adminaide.jpg" alt="Aide administrative">
+          </div>
+          <h3>Aide administrative</h3>
+          <p>Petits coups de main, démarches</p>
+        </div>
       </div>
-
-      <div class="service-item">
-        <div class="service-icon">
-          <img src="images/prendrecafé.jpg" alt="Prendre un café">
-        </div>
-        <h3>Prendre un café</h3>
-        <p>Un café, une balade, une conversation</p>
-      </div>
-
-      <div class="service-item">
-        <div class="service-icon">
-          <img src="images\loisirsfinal.jpg" alt="Loisirs">
-        </div>
-        <h3>Loisirs</h3>
-        <p>Activités simples près de chez vous</p>
-      </div>
-
-      <div class="service-item">
-        <div class="service-icon">
-          <img src="images/adminaide.jpg" alt="Aide administrative">
-        </div>
-        <h3>Aide administrative</h3>
-        <p>Petits coups de main, démarches</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-       
-
-
-       
-        
-
-  <!-- Pour Qui Section  ne pas modifier -->
-  <section class="pourqui">
-      <div class="pourqui-content">
-        <div class="pourqui-text">
-          <h2>Pour qui est Seren'Age ?</h2>
-          <p>Pour les seniors qui souhaitent créer du lien, et pour les familles qui veulent les savoir entourés</p>
-          <span class="audience">Seniors • Familles • Proches • Aidants</span>
-        </div>
-        <div class="pourqui-image">
-          <img src="images/séniors heureux.jpg" alt="Seniors heureux">
-        </div>
     </div>
   </section>
 
-
-  
-<section class="marche">
-  <div class="container">
-    <h2>Fonctionnalités</h2>
-
-    <div class="carousel">
-      <!-- bouton précédent -->
-      <button class="nav prev" aria-label="Étape précédente">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-      </button>
-
-      <!-- slides -->
-      <div class="slides">
-        <div class="slide active">
-          <div class="txt">
-            <h3>Accueil</h3>
-            <p>Accédez à l'application et parlez de vos besoins.</p>
-          </div>
-          <img src="images/MICRO.svg" alt="Accueil">
-        </div>
-
-        <div class="slide">
-          <div class="txt">
-            <h3>Inscription facile</h3>
-            <p>Création de profil simple avec assistance vocale.</p>
-          </div>
-          <img src="images/Profile.svg" alt="Inscription">
-        </div>
-
-        <div class="slide">
-          <div class="txt">
-            <h3>Explorer la carte</h3>
-            <p>Découvrir activités et aides à proximité.</p>
-          </div>
-          <img src="images/MAPfigma.svg" alt="Carte">
-        </div>
-
-        <div class="slide">
-          <div class="txt">
-            <h3>Participer & aider</h3>
-            <p>Rejoindre des événements en un clic.</p>
-          </div>
-          <img src="images/dominque.png" alt="Participer">
-        </div>
-
-        <div class="slide">
-          <div class="txt">
-            <h3>Calendrier</h3>
-            <p>Planifier et organiser vos activités.</p>
-          </div>
-          <img src="images/calendrier.svg" alt="Calendrier">
-        </div>
+  <!-- Pour Qui Section -->
+  <section class="audience-section">
+    <div class="audience-section__content">
+      <div class="audience-section__text">
+        <h2>Pour qui est Seren'Age ?</h2>
+        <p>Pour les seniors qui souhaitent créer du lien, et pour les familles qui veulent les savoir entourés</p>
+        <span class="audience-section__tags">Seniors • Familles • Proches • Aidants</span>
       </div>
-
-      <!-- bouton suivant -->
-      <button class="nav next" aria-label="Étape suivante">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </button>
+      <div class="audience-section__image">
+        <img src="images/séniors heureux.jpg" alt="Seniors heureux">
+      </div>
     </div>
+  </section>
 
-    <!-- indicateurs -->
-    <div class="dots"></div>
-  </div>
-</section>
-  <!-- Partenaires Section fini ne pas modifier -->
+  <!-- Fonctionnalités Section -->
+  <section class="features-section">
+    <div class="features-section__container">
+      <h2>Fonctionnalités</h2>
+      <div class="carousel">
+        <button class="carousel__button carousel__button--prev" aria-label="Étape précédente">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <div class="carousel__slides">
+          <div class="carousel__slide carousel__slide--active">
+            <div class="carousel__text">
+              <h3>Accueil</h3>
+              <p>Accédez à l'application et parlez de vos besoins.</p>
+            </div>
+            <img src="images/MICRO.svg" alt="Accueil">
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__text">
+              <h3>Inscription facile</h3>
+              <p>Création de profil simple avec assistance vocale.</p>
+            </div>
+            <img src="images/Profile.svg" alt="Inscription">
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__text">
+              <h3>Explorer la carte</h3>
+              <p>Découvrir activités et aides à proximité.</p>
+            </div>
+            <img src="images/MAPfigma.svg" alt="Carte">
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__text">
+              <h3>Participer & aider</h3>
+              <p>Rejoindre des événements en un clic.</p>
+            </div>
+            <img src="images/dominque.png" alt="Participer">
+          </div>
+          <div class="carousel__slide">
+            <div class="carousel__text">
+              <h3>Calendrier</h3>
+              <p>Planifier et organiser vos activités.</p>
+            </div>
+            <img src="images/calendrier.svg" alt="Calendrier">
+          </div>
+        </div>
+        <button class="carousel__button carousel__button--next" aria-label="Étape suivante">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+      <div class="carousel__dots"></div>
+    </div>
+  </section>
 
-  <section class="section cream">
-    <div class="container">
+  <!-- Partenaires Section -->
+  <section class="partners-section">
+    <div class="partners-section__container">
       <h2>Nos Partenaires</h2>
-      <div class="partners">
-        <div><img src="images/assurance-maladie-logo-png_seeklogo-501832.png" alt=""></div>
-        <div><img src="images/ministeresolidarité.webp" alt=""></div>
-        <div><img src="images/ccas.jpg" alt=""></div>
-        <div><img src="images/1200x680_fblogo.jpg" alt=""></div>
-        <div><img src="images/World-Health-Organization-WHO-Symbole.jpg" alt=""></div>
-        <div><img src="images/mental-health-logo-design-ideas_393879-3826.avif" alt=""></div>
+      <div class="partners-grid">
+        <div class="partner-logo">
+          <img src="images/assurance-maladie-logo-png_seeklogo-501832.png" alt="Assurance Maladie">
+        </div>
+        <div class="partner-logo">
+          <img src="images/ministeresolidarité.webp" alt="Ministère de la Solidarité">
+        </div>
+        <div class="partner-logo">
+          <img src="images/ccas.jpg" alt="CCAS">
+        </div>
+        <div class="partner-logo">
+          <img src="images/1200x680_fblogo.jpg" alt="France Bénévolat">
+        </div>
+        <div class="partner-logo">
+          <img src="images/World-Health-Organization-WHO-Symbole.jpg" alt="OMS">
+        </div>
+        <div class="partner-logo">
+          <img src="images/mental-health-logo-design-ideas_393879-3826.avif" alt="Santé Mentale">
+        </div>
       </div>
-      
     </div>
   </section>
 
   <!-- CTA Final -->
-  <section class="cta-final">
-    <div class="container">
+  <section class="cta-section">
+    <div class="cta-section__container">
       <h2>Prêt à rejoindre la communauté ?</h2>
       <p>Découvrez comment Seren'Age transforme le quotidien</p>
-      <div class="cta-btns">
-        <a href="#" class="btn-hero">Télécharger</a>
-        <a href="doc.html" class="btn-hero-outline">Documentation</a>
+      <div class="cta-section__actions">
+        <a href="#" class="button button--white">Télécharger</a>
+        <a href="doc.html" class="button button--outline">Documentation</a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__brand">
           <h3>Seren'Age</h3>
           <p>Créer du lien à tout âge</p>
         </div>
-        <div class="footer-col">
+        <div class="footer__column">
           <h4>Navigation</h4>
           <a href="#pourquoi">Pourquoi</a>
           <a href="#services">Services</a>
         </div>
-        <div class="footer-col">
+        <div class="footer__column">
           <h4>Ressources</h4>
           <a href="doc.html">Documentation</a>
           <a href="#">Support</a>
         </div>
-        <div class="footer-col">
+        <div class="footer__column">
           <h4>Légal</h4>
           <a href="#">Mentions légales</a>
           <a href="#">Contact</a>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer__bottom">
         <p>© 2026 Seren'Age - Projet La Toile × emlyon</p>
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
-
-  
 </body>
-
 </html>
