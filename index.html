@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Libre+Caslon+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -122,60 +123,67 @@
     </div>
   </section>
 
-  <!-- Fonctionnalités Section -->
+ <!-- Fonctionnalités Section -->
   <section class="features-section">
     <div class="features-section__container">
       <h2>Fonctionnalités</h2>
       <div class="carousel">
-        <button class="carousel__button carousel__button--prev" aria-label="Étape précédente">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-        </button>
-        <div class="carousel__slides">
-          <div class="carousel__slide carousel__slide--active">
-            <div class="carousel__text">
-              <h3>Accueil</h3>
-              <p>Accédez à l'application et parlez de vos besoins.</p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="carousel__text">
+                <h3>Accueil</h3>
+                <p>Accédez à l'application et parlez de vos besoins.</p>
+              </div>
+              <img src="images/MICRO.svg" alt="Accueil" class="carousel__slide-img">
             </div>
-            <img src="images/MICRO.svg" alt="Accueil">
-          </div>
-          <div class="carousel__slide">
-            <div class="carousel__text">
-              <h3>Inscription facile</h3>
-              <p>Création de profil simple avec assistance vocale.</p>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="carousel__text">
+                <h3>Inscription facile</h3>
+                <p>Création de profil simple avec assistance vocale.</p>
+              </div>
+              <img src="images/Profile.svg" alt="Inscription" class="carousel__slide-img">
             </div>
-            <img src="images/Profile.svg" alt="Inscription">
-          </div>
-          <div class="carousel__slide">
-            <div class="carousel__text">
-              <h3>Explorer la carte</h3>
-              <p>Découvrir activités et aides à proximité.</p>
+            
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="carousel__text">
+                <h3>Explorer la carte</h3>
+                <p>Découvrir activités et aides à proximité.</p>
+              </div>
+              <img src="images/MAPfigma.svg" alt="Carte" class="carousel__slide-img">
             </div>
-            <img src="images/MAPfigma.svg" alt="Carte">
-          </div>
-          <div class="carousel__slide">
-            <div class="carousel__text">
-              <h3>Participer & aider</h3>
-              <p>Rejoindre des événements en un clic.</p>
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="carousel__text">
+                <h3>Participer & aider</h3>
+                <p>Rejoindre des événements en un clic.</p>
+              </div>
+              <img src="images/dominque.png" alt="Participer" class="carousel__slide-img">
             </div>
-            <img src="images/dominque.png" alt="Participer">
-          </div>
-          <div class="carousel__slide">
-            <div class="carousel__text">
-              <h3>Calendrier</h3>
-              <p>Planifier et organiser vos activités.</p>
+            
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="carousel__text">
+                <h3>Calendrier</h3>
+                <p>Planifier et organiser vos activités.</p>
+              </div>
+              <img src="images/calendrier.svg" alt="Calendrier" class="carousel__slide-img">
             </div>
-            <img src="images/calendrier.svg" alt="Calendrier">
           </div>
+          
+          <!-- Navigation -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <button class="carousel__button carousel__button--next" aria-label="Étape suivante">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </button>
       </div>
-      <div class="carousel__dots"></div>
     </div>
   </section>
 
@@ -249,5 +257,37 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <script>
+
+    const swiper = new Swiper('.swiper', {
+      // Configuration de base
+      loop: true,
+      speed: 500,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      
+      // Navigation
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      // Pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      
+      // Défilement au clavier
+      keyboard: {
+        enabled: true,
+      }
+    });
+  </script>
+
 </body>
 </html>
