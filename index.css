@@ -225,10 +225,10 @@ a {
 .why-section__illustration {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -5vw;
   width: 50vw;
   max-width: 600px;
-  height: auto;
+  height: 80%;
 }
 
 .why-section__cards {
@@ -243,7 +243,8 @@ a {
 
 .benefit-card {
   width: 28vw;
-  height: 25vh;
+  min-height: 25vh;
+  height: fit-content;
   padding: 18px;
   border-radius: 18px;
   background: var(--color-cream);
@@ -261,13 +262,13 @@ a {
 }
 
 .benefit-card h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #9E2332;
   margin-bottom: 8px;
 }
 
 .benefit-card p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #9E2332;
   opacity: 0.9;
 }
@@ -352,7 +353,7 @@ a {
 /* Audience Section */
 .audience-section {
  background: linear-gradient(135deg, rgba(226, 79, 16, 0.15), rgba(255, 109, 61, 0.4));    
- padding: 6rem 0;
+ padding: 6rem;
   height: 100vh;
 }
 
