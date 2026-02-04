@@ -4,7 +4,7 @@
 
 /* ========== Hero Documentation ========== */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(135deg, rgba(226, 79, 16, 0.15), rgba(158, 35, 50, 0.4)),
     url('https://i.pinimg.com/1200x/87/02/08/870208af29167b83e7d2ee9d31b08e4a.jpg') center/cover;
   min-height: 100dvh;
   display: flex;
@@ -59,9 +59,10 @@
 }
 
 .section__title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   color: var(--color-orange-dark);
   margin-bottom: var(--spacing-sm);
+  text-align: center;
 }
 
 .section--alt .section__title,
@@ -77,12 +78,13 @@
 }
 
 .section__text {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  font-weight: 500;
   color: var(--color-text-dark);
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  line-height: 1.7;
 }
 
 /* ========== Stats Grid ========== */
@@ -116,7 +118,7 @@
 }
 
 .stat-card__text {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--color-text-dark);
 }
 
@@ -216,11 +218,12 @@
 
 .evolution-card h3 {
   color: var(--color-orange-dark);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-bottom: 0.75rem;
 }
 
 .evolution-card p {
+  font-size: 1.05rem;
   color: var(--color-text-muted);
 }
 
@@ -249,7 +252,7 @@
 }
 
 .metric__label {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--color-text);
 }
 
@@ -279,7 +282,7 @@
 }
 
 .insight h4 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   margin-bottom: var(--spacing-sm);
 }
 
@@ -320,7 +323,7 @@
 }
 
 .goal h4 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 /* ========== Responsive Documentation ========== */
